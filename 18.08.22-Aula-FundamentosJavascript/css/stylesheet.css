@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+ p{
+    font-size: 40px;
+    color: #000;
+}
+
+body{
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #11998e, #38ef7d); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #11998e, #38ef7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffffff;
+  font-family: 'Dancing Script', cursive;
+}
+
+/*Criando um estilo para classes */
+.virgem{
+    color:green;
+    font-size: 18px;
+    font-weight: bold;
+}
