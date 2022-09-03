@@ -78,3 +78,15 @@ SELECT
         'nacional') as Retorno
 FROM
     tb_produto;
+
+
+    SELECT 
+    nome_produto,
+    preco_produto,
+    IF(tipo_produto = 'n',
+        'nacional',
+        IF(tipo_produto = 'i',
+            'importado',
+            'não informado')) AS Origens
+FROM
+    tb_produto;
