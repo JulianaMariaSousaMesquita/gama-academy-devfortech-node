@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/index.css" media="screen" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script defer src="./javascript/index.js" ></script>  
+    <title>Controle de matrículas</title>
+</head>
+<body>
+
+    <!-- Formulário para cadastro dos clientes -->
+	<form id="frmCadastro">
+    <diV class="container text-center">
+        <div class="row">
+            <div class="col">
+                <h1>Controle de matrículas</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="txtRm">Registro de Matrícula:</label>
+                 <input type="text" id="txtRm" / disabled><br>
+            </div>
+            <div class="col">
+                <label for="txtNome">Data do cadastro:</label>
+                <input type="text" id="txtDtCursoCadastro" disabled /><br>
+            </div>
+            <div class="col">
+                <label for="txtNome">Horario do cadastro:</label>
+                <input type="time" id="txtHoraCadastro" disabled /><br>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <label for="txtNome">Nome do aluno:</label>
+                <input type="text" id="txtNome" /><br>
+            </div>
+            <div class="col">
+                <label for="txtTelefone">Telefone:</label>
+                <input type="text" id="txtTelefone"/><br>
+            </div>
+            <div class="col">
+                <label for="txtEmail">Email:</label>
+                <input type="text" id="txtEmail"/><br>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <label for="txtCursos">Cursos:</label>
+                <select id="txtCurso" name="select">
+                    <option value="java">Java</option>
+                    <option value="javascript" selected>JavaScript</option>
+                    <option value="banco">Banco de Dados</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="txtDtCurso">Data curso:</label>
+                <input type="date" id="txtDtCurso"/><br>
+            </div>
+            <div class="col">
+                <label for="txtHora">Hora curso:</label>
+                <input type="time" id="txtHora"/><br>
+            </div>
+        </div>
+        
+        <div class="row">
+             <div class="col">
+                <input class="btn btn-primary btn-lg" type="submit" value="Salvar" id="btnSalvar" />
+             </div>
+        </div>
+    </diV>
+
+</form>
+    
+<!-- Tabela para listar os clientes com possibilidade de alterar/excluir -->
+    
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <table id="tblListar" class="table table-dark table-striped table-responsive">
+    
+            </table>
+            <p id="prgfrm">
+            </p>
+        </div>
+    </div>
+</div>
+    
+
+
+</body>
+</html>
