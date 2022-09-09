@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../javascript/index.js" ></script>  
+    <script defer src="../javascript/FileSaver.js" ></script>    
+    <title>Página para leitura de arquivo</title>
+</head>
+<body>
+    <h1>Leitura de Arquivo</h1>
+    <br>
+    <input type="file" onchange="loadFile(this.files[0])">
+    <br><br><br>
+    <textarea id="output" cols="40" rows="3" disabled></textarea>
+
+    
+</body>
+</html>

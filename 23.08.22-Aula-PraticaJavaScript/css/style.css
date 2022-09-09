@@ -1,0 +1,55 @@
+
+
+.calc {
+    border-radius: 5%;
+    background: linear-gradient(to right, #e55d87, #5fc3e4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 20px;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+}
+
+.calc h1{
+    text-align: center;
+    color: #fff;
+}
+
+button {
+    margin: 5px;
+}
+
+/* FOOTER */
+footer{
+    background: linear-gradient(to right, #e55d87, #5fc3e4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 20px;
+}
+footer .container{
+    padding: 20px;
+}
+footer nav ul li a{
+    color: white;
+}
+
+footer nav .info-contact li{
+    margin: 0 0 15px;
+}
+
+footer nav .social-media{
+    border-top: 1px solid rgb(255 255 255 / 20%);
+    margin: 20px 0 50px;
+    padding: 50px 0 0;
+    text-align: center;
+}
+footer nav .social-media li{
+    margin: 15px 28px;
+    text-align: center;
+    display: inline-block;
+}
+
+footer nav .social-media li a img{
+    width: 40px;
+    transition: .2s;
+}
+footer nav .social-media li a:hover img{
+    transform: scale(1.2) translateY(-10px);
+}
