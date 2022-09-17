@@ -20,4 +20,6 @@ Requisitos: Conhecimentos e experiência em lógica de programação, Banco de d
 - <a href="https://datastudio.google.com/reporting/1e6e6d93-814b-4d2b-b751-28b622db3264/page/58hgC"> Cronograma aulas </a>
 
 # Entregas
-- <a href=""> Projeto Final </a>
+- <a href="https://github.com/jefferson-dantonio/DevForTech-AcateGama"> Projeto final </a>
+- <a href="https://github.com/orgs/DevForTech-GamaAcademy-Node-grupo1/repositories"> Projetos - Grupo </a>
+- <a href="https://github.com/JulianaMariaSousaMesquita/DevForTech-GamaAcademy-Node"> Projetos - Individual </a>
