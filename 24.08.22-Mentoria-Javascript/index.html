@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet">
+    <script defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"></script>
+    <script defer src="./javascript/index.js"></script>
+    <title>CRUD - Gerenciamento de registros</title>
+  </head>
+  <body>
+    <h1>Sistema de Controle de Registros</h1>
+
+    <form action="javascript:void(0);" method="post" onsubmit="app.Add()">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <form action="javascript:void(0);" method="post"
+              onsubmit="app.Add()">
+              <input type="text" id="add-name" placeholder="Digite um nome"/>
+              <input class="btn btn-success" type="submit" value="Adicionar"/>
+              <br/>
+              </form>
+            </div>
+          </div>
+        </div>
+      </form>
+
+
+      <div class="container" id="spoiler" role="aria-hidden">
+        <form action="javascript:void(0);" method="post" id="saveEdit">
+          <div class="row">
+            <div class="col">
+              <form action="javascript:void(0);" method="post" id="saveEdit">
+                <input type="text" id="edit-name" />
+                <input class="btn btn-warning" type="submit" value="Editar"/>
+                <a class="btn btn-secondary" onclick="CloseInput()" aria-label="Close">X</a>
+              </form>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            Contador de Registros: <p id="counter">0</p>
+          </div>
+        </div>
+      </div>
+
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col">Tabela de Registros</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="countries">
+          <!-- <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td><button class="btn btn-warning">Editar</button></td>
+            <td><button class="btn btn-danger">Excluir</button></td>
+          </tr> -->
+        </tbody>
+      </table>
+    </body>
+  </html>
